@@ -50,12 +50,14 @@ const GamePlay = () => {
           setSelectedNumber={setSelectedNumber}
         />
       </div>
-      <RoleDice currentDice={currentDice} roleDice={roleDice} />
-      <div className="btns">
-        <OutlineButton onClick={resetScore}>Reset Score</OutlineButton>
-        <Button onClick={() => setShowRules((prev) => !prev)}>
-          {showRules ? "Hide" : "Show"} Rules
-        </Button>
+      <div className="bottom_section">
+        <RoleDice currentDice={currentDice} roleDice={roleDice} />
+        <div className="btns">
+          <OutlineButton onClick={resetScore}>Reset Score</OutlineButton>
+          <Button onClick={() => setShowRules((prev) => !prev)}>
+            {showRules ? "Hide" : "Show"} Rules
+          </Button>
+        </div>
       </div>
 
       {showRules && <Rules />}
@@ -65,20 +67,34 @@ const GamePlay = () => {
 
 export default GamePlay;
 
-const MainContainer = styled.main`
-  padding-top: 70px;
+const MainContainer = styled.div`
+  padding: 70px 20px; /* Add padding on the sides for smaller screens */
+
   .top_section {
     display: flex;
     justify-content: space-around;
     align-items: end;
   }
+
   .btns {
-    margin-top: 40px;
-    gap: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+  }
+
+  @media (max-width: 468px) {
+    .top_section {
+      gap: 10px;
+    }
+    .bottom_section {
+    }
+
+    .btns {
+      flex-direction: column; /* Align buttons horizontally */
+      gap: 20px; /* Increase gap between buttons */
+    }
   }
 `;

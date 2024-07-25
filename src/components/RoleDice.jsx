@@ -17,6 +17,7 @@ const DiceContainer = styled.div`
   margin-top: 48px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   .dice {
@@ -25,5 +26,8 @@ const DiceContainer = styled.div`
 
   p {
     font-size: 24px;
+  }
+  @media (max-width: 468px) {
+    margin-right: -1px;
   }
 `;
