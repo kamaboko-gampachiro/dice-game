@@ -85,7 +85,7 @@ const MainContainer = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 468px) {
+  @media (max-width: 721px) {
     .top_section {
       gap: 10px;
     }

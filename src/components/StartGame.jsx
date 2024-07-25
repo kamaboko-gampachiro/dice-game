@@ -46,14 +46,14 @@ const Container = styled.div`
     object-fit: cover; /* Ensure the image covers the container without distortion */
   }
 
-  @media (max-width: 468px) {
+  @media (max-width: 721px) {
     flex-direction: column;
     margin-top: -60px;
     justify-content: center;
     align-items: center; /* Center all items */
 
     .image {
-      height: 40%;
+      height: 60%;
       width: 100%;
     }
     .content {
@@ -62,7 +62,7 @@ const Container = styled.div`
         white-space: nowrap;
       }
       Button {
-        width: 30%;
+        width: 50%;
         padding: 5px;
       }
     }

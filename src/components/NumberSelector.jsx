@@ -50,7 +50,7 @@ const NumberSelectorContainer = styled.div`
   .error {
     color: red;
   }
-  @media (max-width: 468px) {
+  @media (max-width: 721px) {
     grid-template-columns: repeat(2, 1fr);
     padding-right: 10px;
     p {

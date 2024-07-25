@@ -22,7 +22,7 @@ const ScoreContainer = styled.div`
     font-size: 24px;
     font-weight: 500px;
   }
-  @media (max-width: 469px) {
+  @media (max-width: 721px) {
     margin-bottom: 50px;
     h1 {
       font-size: 50px;

@@ -27,7 +27,7 @@ const DiceContainer = styled.div`
   p {
     font-size: 24px;
   }
-  @media (max-width: 468px) {
+  @media (max-width: 721px) {
     margin-right: -1px;
   }
 `;
